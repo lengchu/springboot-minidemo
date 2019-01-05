@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+</head>
+<body>
+
+<h1 th:text="${user == null ? '请先登录' : '欢迎您：' + user.username}"></h1>
+
+</body>
+</html>
